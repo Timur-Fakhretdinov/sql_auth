@@ -1,0 +1,27 @@
+Проект: Система регистрации и авторизации пользователей
+
+Этот проект реализует систему регистрации и авторизации пользователей с использованием MySQL.
+Установка и запуск
+Предварительные требования
+
+    Python 3
+    MySQL
+    pip
+
+Шаги по установке
+
+
+python3 -m venv venv
+source venv/bin/activate  # для macOS/Linux
+venv\Scripts\activate     # для Windows
+
+Установите зависимости:
+
+
+    pip install -r requirements.txt
+
+
+Запустите приложение:
+
+python Auth.py
+
