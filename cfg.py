@@ -15,6 +15,6 @@ fruits_and_vegetables = [
 
 
 #ваш апи ключ
-key = ''
+key = '52b6e7959b477f5571e229c6a32a5b15abd46cd2'
 # ваш номер девайса
-device = 1000
+device = 2901

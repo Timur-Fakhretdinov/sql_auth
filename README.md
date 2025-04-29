@@ -12,8 +12,8 @@
 
 
 python3 -m venv venv
-source venv/bin/activate  # для macOS/Linux
-venv\Scripts\activate     # для Windows
+source venv/bin/activate 
+
 
 Установите зависимости:
 

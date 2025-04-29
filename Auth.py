@@ -7,7 +7,7 @@ import hashlib
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password=""
+  password="1"
 )
 # print(mydb)
 mycursor = mydb.cursor()
@@ -16,7 +16,7 @@ mycursor.execute("CREATE DATABASE if not exists ABC_USERS")
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="",
+  password="1",
   database="ABC_USERS"
 )
 mycursor = mydb.cursor()
@@ -60,10 +60,10 @@ if myresult:
 
 # регистрация
 else:
-    print('Номер не найден в базе данных.пройди регистрацию')
+    print('Номер не найден в базе данных.пройдите регистрацию')
     mycursor = mydb.cursor()
     sql = "INSERT INTO users (phone, password, firstname, lastname) VALUES (%s, %s, %s, %s)"
-    val = (f'{phone}', hashlib.sha256(input('Введите ваш пароль: ').encode()).hexdigest(), input('ввдедите ваше имя: '), input('ввдедите вашу фамилию: '))
+    val = (f'{phone}', hashlib.sha256(input('Придумайте ваш пароль: ').encode()).hexdigest(), input('ввдедите ваше имя: '), input('ввдедите вашу фамилию: '))
     mycursor.execute(sql, val)
     mydb.commit()
     print("вы Варегестрированы, теперь залогиньтесь.")
